@@ -9,8 +9,11 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
+import lombok.Data;
+
 @Entity
 @Table(name="employee")
+@Data
 public class Employee implements Serializable {
 	
 	@Id
@@ -35,6 +38,7 @@ public class Employee implements Serializable {
 	@Column(name="employee_code")
 	private String employeeCode;
 	
+	/*
 	public Employee() {
 		
 	}
@@ -110,4 +114,5 @@ public class Employee implements Serializable {
 		return "Employee [id=" + id + ", name=" + name + ", email=" + email + ", jobTitle=" + jobTitle + ", phone="
 				+ phone + ", imageUrl=" + imageUrl + ", employeeCode=" + employeeCode + "]";
 	}
+	*/
 }
